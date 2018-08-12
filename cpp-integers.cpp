@@ -10,6 +10,7 @@ int main() {
   int value = 578;
   long int longVal = 2234234234231231;
   short int shortVal = 2342;
+  unsigned int unsignedVal = 69384;
 
   int maxVal = std::numeric_limits<int>::max(); // Tut calls for INT_MAX here, but vim-cpp-auto-include not picking it up and autodeletes the limits include
   int minVal = std::numeric_limits<int>::min(); // Tut calls for INT_MIN here, but vim-cpp-auto-include not picking it up and autodeletes the limits  include
@@ -36,6 +37,8 @@ int main() {
   cout << "Max short int value: " << maxShortVal << endl;
   cout << "Size of a short int value: " << sizeof(shortVal) << endl;
   cout << "" << endl;
+
+  cout << "Unsigned int value: " << unsignedVal << endl;
 
   return 0;
 }
